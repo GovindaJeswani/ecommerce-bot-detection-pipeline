@@ -33,16 +33,15 @@ The pipeline follows a strict **Medallion Architecture** (Bronze, Silver, Gold) 
 * **Anomaly Detection:** Trains an unsupervised **K-Means Clustering** model on scaled features. Because real-world bot behavior constantly evolves, this unsupervised approach mathematically isolates hyper-active sessions (e.g., scrapers viewing 9 products in 1 second) without relying on historical labels.
 
 ## 📊 Key Results & Visualizations
-*(Note: Replace the placeholder text below with the actual screenshots of your graphs!)*
 
 ### Bot Behavior vs. Human Behavior
-`<img width="840" height="518" alt="scatter" src="https://github.com/user-attachments/assets/7200e16b-f2f5-4075-9e82-d0492175e3a0" />
-`
+<img width="840" height="518" alt="scatter" src="https://github.com/user-attachments/assets/7200e16b-f2f5-4075-9e82-d0492175e3a0" />
+
 > *The scatter plot demonstrates the stark behavioral difference between normal human traffic (gradual clicks over long durations) and scraper bots (hundreds of clicks in near-zero seconds).*
 
 ### The "Smoking Gun": Click Rate Density
-`<img width="840" height="482" alt="bar" src="https://github.com/user-attachments/assets/55473840-e09d-47de-81b8-8ba7340f0103" />
-`
+<img width="840" height="482" alt="bar" src="https://github.com/user-attachments/assets/55473840-e09d-47de-81b8-8ba7340f0103" />
+
 > *The density distribution highlights normal human navigation peaking near 0.05 clicks/sec, while the ML-flagged bot cluster spikes at mathematically impossible speeds.*
 
 ## 🚀 How to Run
